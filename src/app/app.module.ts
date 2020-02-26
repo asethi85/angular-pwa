@@ -21,12 +21,14 @@ import { PetListComponent } from './pet-list/pet-list.component';
 import { DataFacadeService } from './services/data-facade.service';
 import { RouteGuardService } from './services/route-guard.service';
 import { DexieService } from './services/dexie.service';
+import { PetDraftComponent } from './pet-draft/pet-draft.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PetListComponent,
     CreatePetComponent,
+    PetDraftComponent
   ],
   imports: [
     FormsModule,

@@ -35,8 +35,8 @@ export class CreatePetComponent implements OnInit {
       name: this.petName,
       status: this.statuses.find((item: any) => item.id === parseInt(this.petStatus, 10)).status
     };
-    this.dataService.createPet(pet).subscribe(() => {
-      alert('created successfully');
+    this.dataService.createPet(pet).subscribe((message: string) => {
+      alert(message);
     });
   }
 }
